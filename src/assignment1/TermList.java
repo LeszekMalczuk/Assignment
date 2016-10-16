@@ -17,7 +17,7 @@ public class TermList
 
 	public void addTerms() throws FileNotFoundException//Exception // // Method of split of data in string and double
 	{
-		File usersFile = new File("././terms.txt");	//it is adding  file with list of data
+		File usersFile = new File("terms.txt");	//it is adding  file with list of data
 	
 		inUsers = new Scanner(usersFile);
  
