@@ -15,7 +15,7 @@ public class TermList
 	}
 
 
-	public void addTerms() throws FileNotFoundException//Exception // // Method of split of data in string and double
+	public ArrayList<Term> addTerms() throws FileNotFoundException//Exception // // Method of split of data in string and double
 	{
 		File usersFile = new File("terms.txt");	//it is adding  file with list of data
 	
@@ -33,10 +33,11 @@ public class TermList
 
 			Term word = new Term();
 			word.weight = Double.parseDouble(userTokens[0]);   
-			word.term = (userTokens[1]);
+			word.termTerm = (userTokens[1]);
 			listOfTerms.add(word);
 		}
 		inUsers.close();
+		return listOfTerms;
 	}
 
 	public ArrayList<Term> getArray()

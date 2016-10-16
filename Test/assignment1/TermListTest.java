@@ -52,7 +52,7 @@ public class TermListTest {
 		ArrayList<Term> box = new ArrayList<>();
 		box = termlist.getArray();
 		assertEquals(box.get(0).weight, 5627187200.0, 0.01);
-		assertEquals(box.get(0).term, "the");
+		assertEquals(box.get(0).termTerm, "the");
 		
 	}
 }
