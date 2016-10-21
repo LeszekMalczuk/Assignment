@@ -1,5 +1,7 @@
 package assignment1;
 
+import java.util.ArrayList;
+
 public class Term {
 	
 	public double weight; //    //it is a declared a number in the array
@@ -8,6 +10,11 @@ public class Term {
 	public Term()
 	{
 		
+	}
+
+	public ArrayList<Term> toLowerCase() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
