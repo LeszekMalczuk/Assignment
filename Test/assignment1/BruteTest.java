@@ -32,9 +32,22 @@ public class BruteTest
 		BruteAutocomplete bM = new BruteAutocomplete();
 		String prefix = "...989778";
 		assertEquals(bM.bestMatch(prefix), null);
-		//asse
 		
 	}
-	
+	@Test
+	public void  matches()
+	{
+		BruteAutocomplete M = new BruteAutocomplete();
+		String prefix = " ";
+		int k = 5;
+		assertArrayEquals(M.matches(prefix, k), null, 5);
+		
+		
+	}
+
+	private void assertArrayEquals(Iterable<String> matches, String string, int i) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
