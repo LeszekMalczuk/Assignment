@@ -10,7 +10,8 @@ public class BruteAutocomplete implements AutoComplete
 	ArrayList<Term> listOfTerms = new ArrayList<>();
 	private double result;
 	private String result2;
-	TermList termlist = new TermList();	
+	TermList termlist = new TermList();
+	public Object quickAutocompete;	
 
 
 	public  BruteAutocomplete() 
@@ -80,7 +81,7 @@ public class BruteAutocomplete implements AutoComplete
 			if (s.termTerm.toLowerCase().startsWith(prefix) && counter++ < k)
 			{
 				colectionK.add(s.termTerm);
-
+				
 			}
 		}
 
@@ -88,8 +89,13 @@ public class BruteAutocomplete implements AutoComplete
 
 		// napisanie kodu do porównywania  string - int 
 	}
+	/////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-}
+	}
+
+	    
+	    
+
 
 
 
